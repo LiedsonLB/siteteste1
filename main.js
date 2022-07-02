@@ -1,8 +1,6 @@
-const hamburgue = document.getElementById("checkbox");
-const menu = document.getElementsByClassName("menu")
+const MenuHamburgue = document.querySelector("#checkbox");
+const MenuNav = document.querySelector("#menu");
 
-function translate(){
-
-}
-
-hamburgue.addEventListener("click", translate)
+MenuHamburgue.addEventListener("click", (e) => {
+    MenuNav.classList.toggle("hide");
+})
